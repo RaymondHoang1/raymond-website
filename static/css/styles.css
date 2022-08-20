@@ -1,0 +1,178 @@
+
+body {
+    text-align: center;
+    background-color: #14171c;
+    color: white;
+    font-family: 'Merriweather, serif;
+}
+
+
+
+a {
+    color: black;
+    padding: 0px 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color: white;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 50px auto 25px auto;
+}
+
+
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+
+.navbar-container {
+    position: fixed;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+
+
+.header_background {
+    background-image: url('https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: norepeat;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+
+.header__container {
+    text-align: center;
+    color: #fff;
+    padding: 17%;
+}
+
+@media (max-width: 900px) {
+    .header__container {
+    position: absolute;
+    top: 7em;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    }
+}
+
+
+
+#about_me {
+    background-color: #1b1f26;
+    padding: 7% 15%;
+}
+
+.profile {
+    text-align: left;
+    margin: auto;
+    line-height: 2;
+}
+
+.school-img {
+    display: block;
+    margin: 60px auto auto;
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+
+
+
+#skills {
+    background-color: #1b1f26;
+}
+
+.skills-img {
+    width: 15rem;
+    margin: 50px;
+
+}
+
+.skills-desc {
+    margin: auto auto 65px;
+    width: 60%;
+}
+
+
+#contact_me {
+    background-image: url("/static/images/gradient-shape.png");
+    background-attachment: fixed;
+    background-repeat: norepeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.contacts {
+    padding: 200px 0;
+    text-align: left;
+}
+
+
+#footer {
+    background-color: #323740;
+    text-align: center;
+    padding: 50px 0 20px;
+
+}
+
+.footer-icons {
+    margin: 10px 20px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+
+
+#projects {
+    padding: 5% 15%;
+}
+
+.project-header {
+    background-color: #1b1f26;
+}
+
+
+
+
+.card-title {
+    margin: 12px;
+}
+
+
+
+.blog-link {
+    color: white;
+}
+
+.blog-link:hover {
+    color: blue;
+}
+
