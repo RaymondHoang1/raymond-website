@@ -3,7 +3,8 @@ body {
     text-align: center;
     background-color: #14171c;
     color: white;
-    font-family: 'Merriweather, serif;
+    font-family: 'Merriweather', serif;
+    line-height: 2;
 }
 
 
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5{
     padding: 17%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 700px) {
     .header__container {
     position: absolute;
     top: 7em;
@@ -76,6 +77,7 @@ h1, h2, h3, h4, h5{
     text-align: center;
     }
 }
+
 
 
 
@@ -176,3 +178,21 @@ h1, h2, h3, h4, h5{
     color: blue;
 }
 
+
+@media (max-width: 700px) {
+    .skills-img {
+        width: 10rem;
+        margin: 50px auto;
+    }
+    #contact_me {
+        background-position: center;
+    }
+    .header__container {
+       position: absolute;
+       top: 27%;
+       right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+}
