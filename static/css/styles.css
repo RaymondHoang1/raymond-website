@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5{
     background-position: center;
     background-repeat: norepeat;
     background-size: cover;
-    min-height: 90vh;
+    width: 100vw;
+    height: 90vh;
 }
 
 
@@ -124,6 +125,8 @@ h1, h2, h3, h4, h5{
     background-attachment: fixed;
     background-repeat: norepeat;
     background-size: cover;
+    width: 100vw;
+    height: 90vh;
     padding: 50px;
 }
 
@@ -186,6 +189,7 @@ h1, h2, h3, h4, h5{
     }
     #contact_me {
         background-position: center;
+
     }
     .header__container {
        position: absolute;
