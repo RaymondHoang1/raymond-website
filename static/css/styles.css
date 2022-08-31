@@ -7,12 +7,14 @@ body {
     line-height: 2;
 }
 
+hr {
+    background-color: grey;
+}
 
 
 a {
-    color: black;
-    padding: 0px 25px;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -66,6 +68,7 @@ h1, h2, h3, h4, h5{
     text-align: center;
     color: #fff;
     padding: 17%;
+
 }
 
 @media (max-width: 900px) and (min-width: 700px) {
@@ -144,6 +147,8 @@ h1, h2, h3, h4, h5{
 }
 
 .footer-icons {
+    color: black;
+    padding: 0px 25px;
     margin: 10px 20px;
 }
 
@@ -173,12 +178,56 @@ h1, h2, h3, h4, h5{
 
 
 
+
+.blog-header {
+    background-image: url('https://i.pinimg.com/originals/a6/12/11/a61211d4bae2f8957bf921fad6cb5258.jpg');
+    background-repeat: norepeat;
+    background-size: cover;
+    color: black;
+}
+
 .blog-link {
     color: white;
 }
 
 .blog-link:hover {
     color: blue;
+}
+
+.post-preview {
+    text-align: left;
+    padding: 10px;
+}
+
+.post-link {
+    color: white;
+    padding: 0;
+}
+
+.post-link:hover {
+    color:blue;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.post-subtitle {
+    font-weight: 1;
+}
+
+.post-media {
+    color: grey;
+}
+
+#form {
+    text-align: left;
+    font-size: 15px;
+}
+
+.blog-post {
+    background-size: cover;
+
 }
 
 
@@ -199,4 +248,13 @@ h1, h2, h3, h4, h5{
         margin: auto;
         text-align: center;
     }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .header_background {
+    background-attachment: scroll;
+  }
+  #contact_me {
+    background-attachment: scroll;
+  }
 }
