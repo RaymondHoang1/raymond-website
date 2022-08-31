@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5{
 
 }
 
-@media (max-width: 900px) and (min-width: 700px) {
+@media (max-width: 950px) and (min-width: 700px) {
     .header__container {
     position: absolute;
     top: 7em;
@@ -80,9 +80,15 @@ h1, h2, h3, h4, h5{
     margin: auto;
     text-align: center;
     }
+
 }
 
+@media (max-width: 950px) and (min-width: 700px) and (pointer:none), (pointer:coarse) {
+   .header__container {
+      top: 15vh;
+   }
 
+}
 
 
 #about_me {
@@ -238,8 +244,8 @@ h1, h2, h3, h4, h5{
     }
     #contact_me {
         background-position: center;
-
     }
+
     .header__container {
        position: absolute;
        top: 27%;
@@ -250,11 +256,14 @@ h1, h2, h3, h4, h5{
     }
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  .header_background {
-    background-attachment: initial;
+@supports (-webkit-touch-callout: none) {
+  .header_background{
+    background-attachment: scroll;
+  }
+  .header__container {
+    top: 16%
   }
   #contact_me {
-    background-attachment: initial;
+    background-attachment: scroll;
   }
 }
