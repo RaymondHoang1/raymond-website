@@ -252,9 +252,9 @@ h1, h2, h3, h4, h5{
 
 @supports (-webkit-overflow-scrolling: touch) {
   .header_background {
-    background-attachment: scroll;
+    background-attachment: initial;
   }
   #contact_me {
-    background-attachment: scroll;
+    background-attachment: initial;
   }
 }
