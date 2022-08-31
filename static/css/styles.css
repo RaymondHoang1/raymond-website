@@ -245,7 +245,9 @@ h1, h2, h3, h4, h5{
     #contact_me {
         background-position: center;
     }
-
+    .header_background{
+    background-attachment: scroll;
+  }
     .header__container {
        position: absolute;
        top: 27%;
@@ -257,11 +259,12 @@ h1, h2, h3, h4, h5{
 }
 
 @supports (-webkit-touch-callout: none) {
+
   .header_background{
     background-attachment: scroll;
   }
   .header__container {
-    top: 16%
+    top: 22%
   }
   #contact_me {
     background-attachment: scroll;
