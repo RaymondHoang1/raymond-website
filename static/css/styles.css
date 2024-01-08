@@ -68,31 +68,14 @@ h1, h2, h3, h4, h5{
 
 
 .header__container {
+    position: absolute;
     text-align: center;
     color: #fff;
-    padding: 17%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
-
-@media (max-width: 950px) and (min-width: 700px) {
-    .header__container {
-    position: absolute;
-    top: 7em;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    }
-
-}
-
-@media (max-width: 950px) and (min-width: 700px) and (pointer:none), (pointer:coarse) {
-   .header__container {
-      top: 15vh;
-   }
-
-}
-
 
 #about_me {
     background-color: #1b1f26;
@@ -101,12 +84,15 @@ h1, h2, h3, h4, h5{
 
 .profile-pic {
     border-radius: 100px;
+    padding: 10px;
 }
 
 .profile {
     text-align: left;
     margin: auto;
     line-height: 2;
+    display:flex
+    flex:wrap;
 }
 
 .school-img {
@@ -182,12 +168,71 @@ h1, h2, h3, h4, h5{
 }
 
 
-
-
 .card-title {
     margin: 12px;
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #14292c;
+    width: 500px;
+    max-width: 80%;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.popup-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-body{
+    padding: 10px 15px;
+}
+
+#popup-overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index:9;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#popup-overlay.active {
+    opacity:1;
+    pointer-events: all;
+}
 
 
 
@@ -214,9 +259,6 @@ h1, h2, h3, h4, h5{
   }
     .header__container {
        position: absolute;
-       top: 27%;
-       right: 0;
-        left: 0;
         margin: auto;
         text-align: center;
     }
