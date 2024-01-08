@@ -196,58 +196,7 @@ h1, h2, h3, h4, h5{
     background-repeat: norepeat;
     background-size: cover;
     color: black;
-    padding: 200px;
-}
-
-.blog-link {
-    color: white;
-}
-
-.blog-link:hover {
-    color: blue;
-}
-
-.post-preview {
-    text-align: left;
-    padding: 10px;
-}
-
-.post-link {
-    color: white;
-    padding: 0;
-}
-
-.post-link:hover {
-    color:blue;
-}
-
-.post-title {
-    font-weight: bold;
-}
-
-.post-subtitle {
-    font-weight: 1;
-}
-
-.post-media {
-    color: grey;
-}
-
-#form {
-    text-align: left;
-
-}
-
-.blog-post {
-    background-size: cover;
-
-}
-
-.flash-message {
-    color: red;
-    font-style: italic;
-    margin: 30px 0;
-    text-align:left;
+    padding: 350px;
 }
 
 
