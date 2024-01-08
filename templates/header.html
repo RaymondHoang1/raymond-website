@@ -37,9 +37,10 @@
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+              <li class="nav-item">
               <a class="nav-link" href="{{ url_for('home') }}">Home</a>
             </li>
+              {% if blog_route == False: %}
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('home') }}#about_me">About Me</a>
             </li>
@@ -55,6 +56,17 @@
               <li class="nav-item">
               <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
             </li>
+              {% elif blog_route == True: %}
+              <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('blog') }}">Posts</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            </li>
+            {% endif %}
           </ul>
         </div>
     </nav>

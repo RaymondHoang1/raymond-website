@@ -39,6 +39,9 @@ h1, h2, h3, h4, h5{
     padding: 7% 15%;
 }
 
+.container {
+    margin-bottom: 3%;
+}
 
 .navbar-container {
     position: fixed;
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5{
 
 
 .header_background {
-    background-image: url('https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif');
+    background-image: url('../images/water.gif');
     background-attachment: fixed;
     background-position: center;
     background-repeat: norepeat;
@@ -94,6 +97,10 @@ h1, h2, h3, h4, h5{
 #about_me {
     background-color: #1b1f26;
     padding: 7% 15%;
+}
+
+.profile-pic {
+    border-radius: 100px;
 }
 
 .profile {
@@ -149,7 +156,6 @@ h1, h2, h3, h4, h5{
     background-color: #323740;
     text-align: center;
     padding: 50px 0 20px;
-
 }
 
 .footer-icons {
@@ -190,6 +196,7 @@ h1, h2, h3, h4, h5{
     background-repeat: norepeat;
     background-size: cover;
     color: black;
+    padding: 200px;
 }
 
 .blog-link {
@@ -228,13 +235,21 @@ h1, h2, h3, h4, h5{
 
 #form {
     text-align: left;
-    font-size: 15px;
+
 }
 
 .blog-post {
     background-size: cover;
 
 }
+
+.flash-message {
+    color: red;
+    font-style: italic;
+    margin: 30px 0;
+    text-align:left;
+}
+
 
 
 @media (max-width: 700px) {
